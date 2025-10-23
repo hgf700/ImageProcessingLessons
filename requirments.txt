@@ -1,1 +1,1 @@
-pip install opencv-python numpy matplotlib notebook scikit-image
+pip install opencv-python numpy matplotlib notebook scikit-image opencv-stubs scikit-learn
