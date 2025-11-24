@@ -1,24 +1,16 @@
 Częstotliwość określa, jak szybko zmieniają się kolory lub jasność w obrazie:
 - wyższa częstotliwość → szybsze zmiany
 - niższa częstotliwość → wolniejsze zmiany
-
-- poprawka na shif(male na srodek czyli na srodku czarno na krancah powinny byc jasne puntky ale ich malo)
-
-To co jest NAD i POD (przez shift) środkiem widma FFT oznacza częstotliwości dla 
-(poziome krawędzie/linie w obrazie --- ).
-
-- To co jest PO LEWEJ i PO PRAWEJ (przez shift) stronie środka oznacza oznacza częstotliwości dla 
-(pionowe krawędzie/linie w obrazie |||).
+srodek duzo zawsze niskie na bokach wysokie wartosci
 
 - Dzięki fftshift niskie częstotliwości (powolne zmiany jasności) są przesunięte do środka widma,
   a wysokie częstotliwości (szybkie zmiany) znajdują się dalej od środka.
-
-- Ukośne jasne linie w widmie odpowiadają ukośnym strukturom i krawędziom w obrazie w (kątach/ np prawy dolny rog!!)
 
 - fft_mag = logarytm z amplitudy FFT(wizualne):
 Wysoka wartość → ta częstotliwość ma dużą energię / dużo „mocy” w obrazie
 Niska wartość → ta częstotliwość jest słabo obecna
 
+#nie wiem czy to poprawne?
 PRZYKŁADY:
 - Jeśli w obrazie jest dużo pionowych krawędzi,
   to po FFT pojawią się jasne plamy po LEWEJ i PRAWEJ stronie środka.
